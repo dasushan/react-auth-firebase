@@ -74,7 +74,7 @@ const AuthForm = () => {
                     // ...
                     return res.json().then(data => {
                         authCtx.login(data.idToken);
-                        history.replace('/');
+                        history.replace('/profile');
                     }) 
 
                 } else {
